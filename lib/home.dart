@@ -1,4 +1,9 @@
+
+
+
 import 'package:flutter/material.dart';
+
+import 'user.dart';
 
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
@@ -11,6 +16,24 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text('Ecom App UI', style: TextStyle
+          (color: Colors.black),)),
+        backgroundColor: Colors.white,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.notification_important,
+              color: Colors.black,
+            ),
+            onPressed: () { Navigator.push(context,
+                MaterialPageRoute(builder: (context)=>User()));
+
+              // do something
+            },
+          )
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
