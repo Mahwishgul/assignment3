@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'user.dart';
 
+// ignore: camel_case_types
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
 
@@ -12,6 +13,7 @@ class home extends StatefulWidget {
   _homeState createState() => _homeState();
 }
 
+// ignore: camel_case_types
 class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
